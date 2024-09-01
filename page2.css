@@ -1,0 +1,245 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    width: 400px; /* Set page width */
+    height: 613px; /* Set page height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    flex-direction: row; /* Changed to row to stack elements horizontally */
+    width: 100%; /* Full width of the page */
+    height: 100%; /* Full height of the page */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 30%; /* Adjusted width for sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f6f9fc, #e9effd);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px; /* Adjusted margin for space between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo {
+    width: 100px; /* Smaller size for the logo */
+    height: auto;
+    margin-bottom: 10px; /* Adjust margin */
+    border-radius: 50%;
+    border: 2px solid #2196F3;
+    padding: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Content styling */
+.content {
+    width: 70%; /* Adjusted width for content section */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically within the content */
+    padding-left: 10px; /* Adjust padding */
+}
+
+/* Profile summary section */
+.profile-summary {
+    text-align: left;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+/* Profile summary heading */
+.profile-summary h2 {
+    font-size: 20px; /* Smaller font size */
+    margin-bottom: 5px; /* Adjust margin */
+    color: #333;
+    border-bottom: 2px solid #2196F3;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+/* Profile info styling */
+.profile-info {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.profile-pic {
+    width: 100px; /* Smaller profile picture */
+    height: 100px;
+    background-image: url('pic.png'); 
+    /* background-color: #e0e0e0; */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    font-size: 18px; /* Smaller font size */
+    margin-bottom: 5px; /* Adjust margin */
+    color: #333;
+}
+
+.details p {
+    font-size: 14px; /* Smaller font size */
+    margin: 3px 0; /* Adjust margin */
+}
+
+.details span {
+    font-weight: bold;
+}
+
+/* Footer styling */
+.footer {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px; /* Adjust margin */
+}
+
+/* Footer paragraph styling */
+.footer p {
+    margin: 5px 0;
+}
+
+/* Update Section Links */
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+.footer a:hover {
+    color: #1e88e5;
+}
+
+/* Button styling */
+.buttons a {
+    display: inline-block;
+    padding: 8px 15px; /* Smaller padding */
+    margin-right: 5px; /* Adjust margin */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(135deg, #2196F3, #21CBF3);
+    transition: background 0.3s ease;
+}
+
+.buttons a:hover {
+    background: linear-gradient(135deg, #1e88e5, #1c9adb);
+}
+
+/* Task section styling */
+.task-section {
+    margin-top: 10px; /* Adjust margin */
+}
+
+.task-section h3 {
+    font-size: 18px; /* Smaller font size */
+    color: #333;
+    border-bottom: 2px solid #2196F3;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.task-section ul {
+    list-style-type: none;
+}
+
+.task-section ul li {
+    padding: 8px; /* Smaller padding */
+    border-radius: 5px;
+    margin-bottom: 5px; /* Adjust margin */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Urgent task styling */
+.task-section ul li.urgent {
+    border-left: 5px solid #d32f2f;
+    background-color: #ffe8e8;
+}
+
+/* Delegate task styling */
+.task-section ul li.delegate {
+    border-left: 5px solid #ff9800;
+    background-color: #fff8e1;
+}
+
+/* Alert section styling */
+.alert-section {
+    background-color: #ffebee;
+    padding: 15px; /* Adjust padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Adjust margin */
+}
+
+.alert-section h3 {
+    font-size: 18px; /* Smaller font size */
+    margin-bottom: 10px; /* Adjust margin */
+    color: #d32f2f;
+}
+
+#alert-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#alert-list li {
+    background-color: #fff;
+    padding: 8px 10px; /* Smaller padding */
+    margin-bottom: 5px; /* Adjust margin */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#alert-list li .dismiss-btn {
+    position: absolute;
+    top: 8px; /* Adjust position */
+    right: 8px; /* Adjust position */
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}

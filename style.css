@@ -1,0 +1,111 @@
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-top {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the header */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-top h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px; /* Adjust padding to make space for the header */
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px; /* Reduced padding */
+    border-radius: 10px;
+    width: 260px; /* Reduced width */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 120px; /* Increased margin to move it further down */
+    text-align: center;
+}
+.sign{
+    margin-left: 40%;
+    background-color: #ffa500;
+    width: 70px;
+}
+.login-form h2 {
+    margin-bottom: 15px; /* Adjusted margin */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 8px; /* Slightly smaller padding */
+    margin-bottom: 12px; /* Adjusted margin */
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-form .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Adjusted margin */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffbf00; /* Yellow background */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #ffa500; /* Darker yellow on hover */
+}
+
+.login-form .help-link {
+    display: block;
+    margin-top: 10px; /* Adjusted margin */
+    color: #ffbf00;
+}
+
+.login-form .app-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px; /* Adjusted margin */
+}
+
+.login-form .app-links img {
+    width: 40%;
+    border-radius: 5px;
+}
